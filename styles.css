@@ -1,0 +1,12 @@
+@import 'css-reset.css';
+@import 'fonts.css';
+@import 'common.css';
+@import 'header.css';
+@import 'content.css';
+@import 'footer.css';
+
+@media (max-width: 767px) {
+	.row {
+		margin: 0;
+	}
+}

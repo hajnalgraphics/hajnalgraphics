@@ -1,0 +1,180 @@
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@-moz-keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.hero {
+    height: 516px;
+    background: url('./assets/background.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 214px;
+    margin-bottom: 60px;
+}
+
+.hero__slider {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: fade;
+    -o-animation-name: fade;
+    -o-animation-duration: fade;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.hero__title {
+    font-size: 48px;
+}
+
+.hero__text {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.hero__squares {
+    padding-left: 15px;
+}
+
+.hero__square {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.hero__square.active {
+    transform: scale(1.2);
+    background-color: rgb(0, 147, 216);
+    ;
+}
+
+.content__column {
+    margin-bottom: 80px;
+}
+
+.content__column .content__title {
+    font-family: Roboto-Light;
+    font-size: 34px;
+}
+
+.content__image {
+    height: 193px;
+    width: 193px;
+    float: right;
+    margin: 0 0 16px 16px;
+}
+
+.content__text {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.content__list li {
+    padding-left: 30px;
+    position: relative;
+    text-align: justify;
+}
+
+.content__list li::before {
+    content: url(./assets/Polygon\ 1.png);
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 10px;
+}
+
+.content__link {
+    float: right;
+}
+
+.our-partners__col {
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.our-partners__partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #caccce;
+    height: calc(66vw - 30px);
+}
+
+.our-partners__partner:not(:first-child) {
+    border-top: none;
+}
+
+@media (min-width: 768px) {
+    .our-partners__col {
+        display: flex;
+        align-items: center;
+    }
+    .our-partners__col .our-partners__partner {
+        width: 33.33%;
+        height: 100%;
+        padding: 11%;
+        border: 1px solid #caccce;
+    }
+
+    .our-partners__partner:not(:first-child) {
+        border-left: none;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .content__image {
+        height: 255px;
+        width: 255px;
+        margin: 0 0 30px 30px;
+    }
+    .content__text {
+        margin-bottom: 20px;
+    }
+    .content__text:last-of-type {
+        margin-bottom: 10px
+    }
+    .content__list li {
+        margin-bottom: 20px;
+    }
+    .content__list li:last-child {
+        margin-bottom: 35px;
+    }
+    .hero {
+        padding-top: 320px;
+        height: 582px;
+    }
+}
