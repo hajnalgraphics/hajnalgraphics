@@ -51,6 +51,8 @@
     -o-animation-duration: fade;
     animation-name: fade;
     animation-duration: 2s;
+    width: 83%;
+    padding-left: 15px;
 }
 
 .hero__title {
@@ -83,11 +85,17 @@
 
 .content__column {
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.content__column .content__title {
+.content__title {
     font-family: Roboto-Light;
     font-size: 34px;
+}
+.content__wrapper {
+    flex-grow: 1;
 }
 
 .content__image {
@@ -107,6 +115,7 @@
     padding-left: 30px;
     position: relative;
     text-align: justify;
+    margin-bottom: 30px;
 }
 
 .content__list li::before {
@@ -117,7 +126,9 @@
 }
 
 .content__link {
-    float: right;
+   position: absolute;
+   bottom: -16px;
+   right: 15px;
 }
 
 .our-partners__col {
@@ -176,5 +187,9 @@
     .hero {
         padding-top: 320px;
         height: 582px;
+    }
+
+    .hero__slider {
+        width: 50%;
     }
 }
